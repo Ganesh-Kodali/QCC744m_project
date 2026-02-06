@@ -1,0 +1,70 @@
+step 1 : board_init();
+
+step 2 :system_init();
+
+step 3 :i2c0 = qcc74x_device_get_by_name("i2c0");
+	qcc74x_i2c_init(i2c0, 100000);
+
+step 4:adc_init_mq135();
+
+step 5:spi_init();
+
+step 6:ds1307_force_start();
+	qcc74x_mtimer_delay_ms(100);
+
+step 7:while(1)
+	msg[0];
+	msg[1];
+	qcc74x_i2c_transfer()
+	s = bcd_to_dec()
+	m = bcd_to_dec()
+	h = bcd_to_dec()
+
+step 8:if(h==0 && m==0 && s==0)
+
+step 9:ds1307_force_start();
+
+step 10:dht11_read(&t,&hum);
+
+	read raw adc, convert to mv 
+
+step 11:build spi packet
+
+step 12:spi transmit 
+
+step 13: uart print 
+
+code flow 
+
+BOOT
+ |
+board_init
+ |
+system_init
+ |
+i2c + adc + spi init
+ |
+RTC force start
+ |
+-------------------------
+|       WHILE(1)       |
+-------------------------
+ |
+Read RTC
+ |
+RTC watchdog
+ |
+Read DHT11
+ |
+Read ADC
+ |
+Build SPI packet
+ |
+Send SPI
+ |
+Print UART
+ |
+Delay 1s
+ |
+Repeat
+

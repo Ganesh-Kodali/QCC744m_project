@@ -1,0 +1,15 @@
+did spi board to board
+
+master board init is going into infinite loop
+
+and done debugging with printf statement
+
+found spi0 init is not working
+
+tried to deinit 
+
+and didnt work 
+
+tried with delay didnt work
+
+will do with spi1 tmmr 

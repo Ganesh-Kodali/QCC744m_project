@@ -1,0 +1,7 @@
+read the ref manual for qcc744
+
+and understood base address and enable ,gpio mode ,set n reset of gpio
+
+written code for led blinking in baremetal
+
+no output yet

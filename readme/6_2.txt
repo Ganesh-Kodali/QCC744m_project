@@ -1,0 +1,6 @@
+
+practiced loops and arrays using functions
+
+finished baremetal coding for led on qcc74x
+
+revised yocto setup and creating layers and written hello.bb in new meta layer  

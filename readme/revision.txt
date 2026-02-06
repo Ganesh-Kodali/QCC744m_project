@@ -1,0 +1,7 @@
+gone throught protocols spi,uart,i2c - data formats and special cases , interrupts,isr,irq
+
+gone through strings, arrays, patterns , logical c progs
+
+lsp- ipc( pipes,msg q,signals,sockets),pcb,OS,scheduling algorithms ,states of process,
+
+booting process,sys calls
